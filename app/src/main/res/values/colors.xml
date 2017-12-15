@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- APPLICATION -->
+    <color name="accent">@color/black</color>
+    <color name="primary">@color/black</color>
+    <color name="primary_dark">@color/black</color>
+    <color name="text">@color/white</color>
+
+    <!-- MATERIAL -->
+    <color name="blue_500">#ff2196f3</color>
+    <color name="green_500">#ff4caf50</color>
+    <color name="red_500">#fff44336</color>
+    <color name="yellow_500">#ffffeb3b</color>
+
+    <!-- STANDARD -->
+    <color name="black">#ff000000</color>
+    <color name="black_00">#00000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="white">#ffffffff</color>
+
+</resources>

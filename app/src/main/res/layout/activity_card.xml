@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:transitionName="@string/shared_element"
+    tools:context="com.heckofanapp.cardcommunicator.ActivityMain" >
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:background="@color/red_500"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:contentDescription="@string/description_ear"
+            android:layout_height="@dimen/height_icon_large"
+            android:layout_width="match_parent"
+            android:padding="@dimen/padding_icon"
+            app:srcCompat="@drawable/ic_ear_white_24dp" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/text"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="@dimen/padding_text"
+            android:text="@string/text_hear"
+            style="@style/Tile.Text.Large" >
+        </TextView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

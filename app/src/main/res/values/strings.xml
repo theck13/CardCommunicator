@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">Card Communicator</string>
+
+    <string name="description_alarm">Alarm Icon</string>
+    <string name="description_ear">Ear Icon</string>
+    <string name="description_forward">Forward Icon</string>
+    <string name="description_hand">Hand Icon</string>
+    <string name="description_light">Light Buld Icon</string>
+    <string name="description_microphone_off">Microphone Off Icon</string>
+    <string name="description_pause">Pause Icon</string>
+    <string name="description_refresh">Refresh Icon</string>
+    <string name="description_rewind">Rewind Icon</string>
+    <string name="description_snow">Snow Flake Icon</string>
+    <string name="description_sync">Sync Icon</string>
+    <string name="description_thumb_down">Thumb Down Icon</string>
+    <string name="description_thumb_up">Thumb Up Icon</string>
+    <string name="description_truck">Truck Icon</string>
+    <string name="description_voice">Voice Icon</string>
+    <string name="description_volume_mute">Volume Mute Icon</string>
+    <string name="description_volume_off">Volume Off Icon</string>
+    <string name="description_wifi_off">Wifi Off Icon</string>
+
+    <string name="shared_element">shared_element</string>
+
+    <string name="text_back">Be right back</string>
+    <string name="text_break">You\'re b re a ki n g  u p</string>
+    <string name="text_hand">Question / Comment</string>
+    <string name="text_connection">Bad connection</string>
+    <string name="text_faster">Slow down</string>
+    <string name="text_frozen">You\'re frozen</string>
+    <string name="text_go">Got to go</string>
+    <string name="text_hear">Can\'t hear you</string>
+    <string name="text_idea">I have an idea</string>
+    <string name="text_move">Let\'s move on</string>
+    <string name="text_mute">Please mute</string>
+    <string name="text_muted">You\'re on mute</string>
+    <string name="text_no">No</string>
+    <string name="text_noise">Background noise</string>
+    <string name="text_reboot">Try to reboot</string>
+    <string name="text_repeat">Please repeat</string>
+    <string name="text_slower">Speed up</string>
+    <string name="text_yes">Yes</string>
+
+</resources>

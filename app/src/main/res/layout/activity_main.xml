@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/height_navigation_bar"
+    android:paddingTop="@dimen/height_status_bar"
+    tools:context="com.heckofanapp.cardcommunicator.ActivityMain" >
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" >
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:alignItems="center"
+            app:flexWrap="wrap"
+            app:justifyContent="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <LinearLayout
+                android:id="@+id/tile_hear"
+                android:background="@color/red_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_ear"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_ear_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_hear"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_move"
+                android:background="@color/green_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_truck"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_truck_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_move"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_reboot"
+                android:background="@color/blue_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_sync"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_sync_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_reboot"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_break"
+                android:background="@color/red_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_volume_off"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_volume_off_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_break"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_mute"
+                android:background="@color/green_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_microphone_off"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_microphone_off_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_mute"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_yes"
+                android:background="@color/blue_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_thumb_up"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_thumb_up_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_yes"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_no"
+                android:background="@color/red_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_thumb_down"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_thumb_down_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_no"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_go"
+                android:background="@color/green_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_alarm"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_alarm_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_go"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_noise"
+                android:background="@color/blue_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_voice"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_voice_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_noise"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_connection"
+                android:background="@color/red_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_wifi_off"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_wifi_off_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_connection"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_back"
+                android:background="@color/green_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_pause"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_pause_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_back"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_repeat"
+                android:background="@color/blue_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_refresh"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_refresh_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_repeat"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_faster"
+                android:background="@color/red_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_forward"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_forward_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_faster"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_slower"
+                android:background="@color/green_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_rewind"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_rewind_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_slower"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_frozen"
+                android:background="@color/blue_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_snow"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_snow_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_frozen"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_muted"
+                android:background="@color/red_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_volume_mute"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_volume_mute_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_muted"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_hand"
+                android:background="@color/green_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_hand"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_hand_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_hand"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tile_idea"
+                android:background="@color/blue_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="@fraction/tile" >
+
+                <ImageView
+                    android:contentDescription="@string/description_light"
+                    android:layout_height="@dimen/height_icon_small"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_icon"
+                    app:srcCompat="@drawable/ic_light_white_24dp" >
+                </ImageView>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_text"
+                    android:text="@string/text_idea"
+                    style="@style/Tile.Text.Small" >
+                </TextView>
+
+            </LinearLayout>
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
