@@ -29,7 +29,7 @@
     <string name="text_break">You\'re b re a ki n g  u p</string>
     <string name="text_hand">Question / Comment</string>
     <string name="text_connection">Bad connection</string>
-    <string name="text_faster">Slow down</string>
+    <string name="text_faster">Speed up</string>
     <string name="text_frozen">You\'re frozen</string>
     <string name="text_go">Got to go</string>
     <string name="text_hear">Can\'t hear you</string>
@@ -41,7 +41,7 @@
     <string name="text_noise">Background noise</string>
     <string name="text_reboot">Try to reboot</string>
     <string name="text_repeat">Please repeat</string>
-    <string name="text_slower">Speed up</string>
+    <string name="text_slower">Slow down</string>
     <string name="text_yes">Yes</string>
 
 </resources>
