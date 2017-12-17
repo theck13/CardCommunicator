@@ -28,24 +28,24 @@ class ActivityMain : AppCompatActivity() {
             showCard(view, R.color.green_500, R.drawable.ic_truck_white_24dp, R.string.text_move)
         })
 
-        val tileReboot = findViewById<LinearLayout>(R.id.tile_reboot)
-        tileReboot.setOnClickListener({ view ->
-            showCard(view, R.color.blue_500, R.drawable.ic_sync_white_24dp, R.string.text_reboot)
-        })
-
-        val tileBreak = findViewById<LinearLayout>(R.id.tile_break)
-        tileBreak.setOnClickListener({ view ->
-            showCard(view, R.color.red_500, R.drawable.ic_volume_off_white_24dp, R.string.text_break)
+        val tileIdea = findViewById<LinearLayout>(R.id.tile_idea)
+        tileIdea.setOnClickListener({ view ->
+            showCard(view, R.color.blue_500, R.drawable.ic_light_white_24dp, R.string.text_idea)
         })
 
         val tileMute = findViewById<LinearLayout>(R.id.tile_mute)
         tileMute.setOnClickListener({ view ->
-            showCard(view, R.color.green_500, R.drawable.ic_microphone_off_white_24dp, R.string.text_mute)
+            showCard(view, R.color.red_500, R.drawable.ic_microphone_off_white_24dp, R.string.text_mute)
         })
 
-        val tileYes = findViewById<LinearLayout>(R.id.tile_yes)
-        tileYes.setOnClickListener({ view ->
-            showCard(view, R.color.blue_500, R.drawable.ic_thumb_up_white_24dp, R.string.text_yes)
+        val tileBreak = findViewById<LinearLayout>(R.id.tile_break)
+        tileBreak.setOnClickListener({ view ->
+            showCard(view, R.color.green_500, R.drawable.ic_volume_off_white_24dp, R.string.text_break)
+        })
+
+        val tileGo = findViewById<LinearLayout>(R.id.tile_go)
+        tileGo.setOnClickListener({ view ->
+            showCard(view, R.color.blue_500, R.drawable.ic_alarm_white_24dp, R.string.text_go)
         })
 
         val tileNo = findViewById<LinearLayout>(R.id.tile_no)
@@ -53,14 +53,29 @@ class ActivityMain : AppCompatActivity() {
             showCard(view, R.color.red_500, R.drawable.ic_thumb_down_white_24dp, R.string.text_no)
         })
 
-        val tileGo = findViewById<LinearLayout>(R.id.tile_go)
-        tileGo.setOnClickListener({ view ->
-            showCard(view, R.color.green_500, R.drawable.ic_alarm_white_24dp, R.string.text_go)
+        val tileYes = findViewById<LinearLayout>(R.id.tile_yes)
+        tileYes.setOnClickListener({ view ->
+            showCard(view, R.color.green_500, R.drawable.ic_thumb_up_white_24dp, R.string.text_yes)
         })
 
-        val tileNoise = findViewById<LinearLayout>(R.id.tile_noise)
-        tileNoise.setOnClickListener({ view ->
-            showCard(view, R.color.blue_500, R.drawable.ic_voice_white_24dp, R.string.text_noise)
+        val tileHand = findViewById<LinearLayout>(R.id.tile_hand)
+        tileHand.setOnClickListener({ view ->
+            showCard(view, R.color.blue_500, R.drawable.ic_hand_white_24dp, R.string.text_hand)
+        })
+
+        val tileSlower = findViewById<LinearLayout>(R.id.tile_slower)
+        tileSlower.setOnClickListener({ view ->
+            showCard(view, R.color.red_500, R.drawable.ic_rewind_white_24dp, R.string.text_slower)
+        })
+
+        val tileFaster = findViewById<LinearLayout>(R.id.tile_faster)
+        tileFaster.setOnClickListener({ view ->
+            showCard(view, R.color.green_500, R.drawable.ic_forward_white_24dp, R.string.text_faster)
+        })
+
+        val tileBack = findViewById<LinearLayout>(R.id.tile_back)
+        tileBack.setOnClickListener({ view ->
+            showCard(view, R.color.blue_500, R.drawable.ic_pause_white_24dp, R.string.text_back)
         })
 
         val tileConnection = findViewById<LinearLayout>(R.id.tile_connection)
@@ -68,24 +83,9 @@ class ActivityMain : AppCompatActivity() {
             showCard(view, R.color.red_500, R.drawable.ic_wifi_off_white_24dp, R.string.text_connection)
         })
 
-        val tileBack = findViewById<LinearLayout>(R.id.tile_back)
-        tileBack.setOnClickListener({ view ->
-            showCard(view, R.color.green_500, R.drawable.ic_pause_white_24dp, R.string.text_back)
-        })
-
         val tileRepeat = findViewById<LinearLayout>(R.id.tile_repeat)
         tileRepeat.setOnClickListener({ view ->
-            showCard(view, R.color.blue_500, R.drawable.ic_refresh_white_24dp, R.string.text_repeat)
-        })
-
-        val tileFaster = findViewById<LinearLayout>(R.id.tile_faster)
-        tileFaster.setOnClickListener({ view ->
-            showCard(view, R.color.red_500, R.drawable.ic_forward_white_24dp, R.string.text_faster)
-        })
-
-        val tileSlower = findViewById<LinearLayout>(R.id.tile_slower)
-        tileSlower.setOnClickListener({ view ->
-            showCard(view, R.color.green_500, R.drawable.ic_rewind_white_24dp, R.string.text_slower)
+            showCard(view, R.color.green_500, R.drawable.ic_refresh_white_24dp, R.string.text_repeat)
         })
 
         val tileFrozen = findViewById<LinearLayout>(R.id.tile_frozen)
@@ -98,14 +98,14 @@ class ActivityMain : AppCompatActivity() {
             showCard(view, R.color.red_500, R.drawable.ic_volume_mute_white_24dp, R.string.text_muted)
         })
 
-        val tileHand = findViewById<LinearLayout>(R.id.tile_hand)
-        tileHand.setOnClickListener({ view ->
-            showCard(view, R.color.green_500, R.drawable.ic_hand_white_24dp, R.string.text_hand)
+        val tileNoise = findViewById<LinearLayout>(R.id.tile_noise)
+        tileNoise.setOnClickListener({ view ->
+            showCard(view, R.color.green_500, R.drawable.ic_voice_white_24dp, R.string.text_noise)
         })
 
-        val tileIdea = findViewById<LinearLayout>(R.id.tile_idea)
-        tileIdea.setOnClickListener({ view ->
-            showCard(view, R.color.blue_500, R.drawable.ic_light_white_24dp, R.string.text_idea)
+        val tileReboot = findViewById<LinearLayout>(R.id.tile_reboot)
+        tileReboot.setOnClickListener({ view ->
+            showCard(view, R.color.blue_500, R.drawable.ic_sync_white_24dp, R.string.text_reboot)
         })
     }
 
