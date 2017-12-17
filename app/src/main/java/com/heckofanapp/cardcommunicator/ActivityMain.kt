@@ -110,7 +110,7 @@ class ActivityMain : AppCompatActivity() {
     }
 
     private fun showCard(view: View, resourceColor: Int, resourceIcon: Int, resourceText: Int) {
-        val intent = Intent(this@ActivityMain, ActivityMain::class.java)
+        val intent = Intent(this@ActivityMain, ActivityCard::class.java)
         intent.putExtra(Constants.EXTRA_COLOR, resourceColor)
         intent.putExtra(Constants.EXTRA_ICON, resourceIcon)
         intent.putExtra(Constants.EXTRA_TEXT, resourceText)
