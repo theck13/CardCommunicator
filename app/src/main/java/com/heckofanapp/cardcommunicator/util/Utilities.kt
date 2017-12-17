@@ -18,14 +18,20 @@ object Utilities {
 
     fun setNavigationBarAndStatusBarPadding(layout: View, context: Context) {
         when ((context.getSystemService(Context.WINDOW_SERVICE) as WindowManager).defaultDisplay.rotation) {
-            Surface.ROTATION_0,
-            Surface.ROTATION_180 -> {
+            Surface.ROTATION_0 -> {
                 layout.setPadding(0, Utilities.getHeightStatusBar(context), 0, Utilities.getHeightNavigationBar(context))
             }
 
-            Surface.ROTATION_90,
-            Surface.ROTATION_270 -> {
+            Surface.ROTATION_90 -> {
                 layout.setPadding(0, Utilities.getHeightStatusBar(context), Utilities.getHeightNavigationBar(context), 0)
+            }
+
+            Surface.ROTATION_180 -> {
+                layout.setPadding(0, Utilities.getHeightNavigationBar(context), 0, Utilities.getHeightStatusBar(context))
+            }
+
+            Surface.ROTATION_270 -> {
+                layout.setPadding(Utilities.getHeightNavigationBar(context), Utilities.getHeightStatusBar(context), 0, 0)
             }
         }
     }
