@@ -90,7 +90,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_reboot"
+                android:id="@+id/tile_idea"
                 android:background="@color/blue_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -121,7 +121,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_break"
+                android:id="@+id/tile_mute"
                 android:background="@color/red_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -152,7 +152,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_mute"
+                android:id="@+id/tile_break"
                 android:background="@color/green_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -183,7 +183,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_yes"
+                android:id="@+id/tile_go"
                 android:background="@color/blue_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -245,7 +245,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_go"
+                android:id="@+id/tile_yes"
                 android:background="@color/green_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -276,7 +276,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_noise"
+                android:id="@+id/tile_hand"
                 android:background="@color/blue_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -307,7 +307,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_connection"
+                android:id="@+id/tile_slower"
                 android:background="@color/red_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -338,7 +338,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_back"
+                android:id="@+id/tile_faster"
                 android:background="@color/green_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -369,7 +369,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_repeat"
+                android:id="@+id/tile_back"
                 android:background="@color/blue_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -400,7 +400,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_faster"
+                android:id="@+id/tile_connection"
                 android:background="@color/red_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -431,7 +431,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_slower"
+                android:id="@+id/tile_repeat"
                 android:background="@color/green_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -524,7 +524,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_hand"
+                android:id="@+id/tile_noise"
                 android:background="@color/green_500"
                 android:clickable="true"
                 android:focusable="true"
@@ -555,7 +555,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tile_idea"
+                android:id="@+id/tile_reboot"
                 android:background="@color/blue_500"
                 android:clickable="true"
                 android:focusable="true"
