@@ -6,6 +6,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.heckofanapp.cardcommunicator.data.Constants
+import com.heckofanapp.cardcommunicator.util.Utilities
 
 class ActivityCard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +22,7 @@ class ActivityCard : AppCompatActivity() {
         cardLayout.setOnClickListener({ _ ->
             finishAfterTransition()
         })
+        Utilities.setNavigationBarAndStatusBarPadding(cardLayout, this@ActivityCard)
 
         val cardIcon = findViewById<ImageView>(R.id.icon)
         cardIcon.setImageResource(icon)

@@ -3,15 +3,20 @@ package com.heckofanapp.cardcommunicator
 import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
+import android.support.constraint.ConstraintLayout
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.LinearLayout
 import com.heckofanapp.cardcommunicator.data.Constants
+import com.heckofanapp.cardcommunicator.util.Utilities
 
 class ActivityMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val layout = findViewById<ConstraintLayout>(R.id.layout)
+        Utilities.setNavigationBarAndStatusBarPadding(layout, this@ActivityMain)
 
         val tileHear = findViewById<LinearLayout>(R.id.tile_hear)
         tileHear.setOnClickListener({ view ->
@@ -105,7 +110,7 @@ class ActivityMain : AppCompatActivity() {
     }
 
     private fun showCard(view: View, resourceColor: Int, resourceIcon: Int, resourceText: Int) {
-        val intent = Intent(this@ActivityMain, ActivityCard::class.java)
+        val intent = Intent(this@ActivityMain, ActivityMain::class.java)
         intent.putExtra(Constants.EXTRA_COLOR, resourceColor)
         intent.putExtra(Constants.EXTRA_ICON, resourceIcon)
         intent.putExtra(Constants.EXTRA_TEXT, resourceText)
